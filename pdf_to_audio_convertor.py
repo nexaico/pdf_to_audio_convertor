@@ -10,6 +10,7 @@ from gtts import gTTS
 def pdf_to_audio(file_name):
     """
         This function will convert the pdf text to the audio.
+        It will save the audio.mp3 file.
     """
     pdf = PdfFileReader(file_name)
     for page in range(pdf.getNumPages()):
